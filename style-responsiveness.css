@@ -1,0 +1,69 @@
+@media (max-width: 600px) {
+  .page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 3.2rem;
+    box-sizing: border-box;
+    border: 9px solid var(--color-border-page);
+    border-radius: 0.0rem;
+    height: 100vh;
+    padding: 1.5rem;
+    justify-content: center;
+    width: 100vw;
+  }
+   
+
+
+#display {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 3px;
+    border-radius: 2rem;
+    border: 1px solid var(--color-border-page);
+    box-shadow: 2px 1rem 7.6rem 3.1rem var(--color-boxshadow-button);
+    margin-top: 5.5rem;
+}
+
+#card-sonds {
+  height: 33.6rem;
+  padding: 2.0rem;
+  display: grid;
+  gap: 1.0rem;
+  grid-template-columns: 2fr 2fr;
+  box-sizing: border-box;
+}
+ 
+.description-songs {
+ display: contents;
+}
+.description-songs p {
+  font-weight: bold;
+  font-family: ui-monospace;
+  font-size: 1.7rem;
+  color: var(--color-description-songs);
+}
+
+
+}
+
+@media (min-width: 1600px) {
+
+  .page {
+
+      margin: 20rem auto;
+ 
+
+  
+    }
+  
+}
+
+
+
+         
+         

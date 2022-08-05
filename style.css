@@ -1,0 +1,360 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  background: var(--color-background-page);
+  
+  transition: 1.0s;
+}
+  
+
+:root{
+  font-size: 62.5%;
+
+  /*-----PAGE-COLORS------*/
+  --color-background-page:rgb(255, 255, 255);
+  --color-border-page: #010b0e;
+  --color-boxshadow-button: rgba(2, 121, 157, 0.17);
+  
+  
+  
+  /*----CONTROL-COLORS-------*/
+
+  --color-timer-display: #323238;
+  --color-background-cards: rgba(207, 204, 204, 0.726);
+  --color-background-cards-hover: #02799D;
+  --color-cards-sonds: rgb(196, 30, 30);
+
+
+  /*---Slide-Bar-controls---*/
+  
+  --color-slide-ranger: #f1f7ee;
+  --color-slide-ranger-background: #18a9f1;
+
+  /*--descrition-Cards-Songs--*/
+  --color-description-songs: #252b41;
+  --color-svg-fill-button-muter: #202020;
+  
+}
+
+
+/*--dark-mode-styles---*/
+body.dark{
+  --color-background-page: #121214;
+  --color-timer-display: #ffff;
+  --color-background-cards:#29292E;
+  --color-border-page: #ffffff;
+  --color-slide-ranger: #252b41;
+  --color-slide-ranger-background: #e1e7eb;
+  --color-description-songs: #e1e7eb;
+  --color-svg-fill-button-muter: #fffdfd;
+}
+
+
+/*=======================PAGE===========================*/
+
+.page {
+  display: flex;
+  align-items: center;
+  margin: 6.0rem auto;
+  gap: 19.2rem;
+  box-sizing: border-box;
+  border: 2px solid var(--color-border-page);
+  border-radius: 2.0rem;
+  height: 46.9rem;
+  padding: 1px;
+  position: relative;
+  box-sizing: border-box;
+}
+ 
+/*==========================DARK-THEME===================*/
+.swich-teme {
+  position: absolute;
+  top: 1.5rem;
+  right: 6rem;
+}
+
+.svg-day , .svg-dark{
+  cursor: pointer;
+}
+
+
+
+/*=======================HIDE-CLASS========================*/
+.hide {
+display: none;
+}
+.description-songs{
+  display: none;
+}
+
+
+
+
+/*====================DISPLAY==============================*/
+#display{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.0rem;
+  border-radius: 2.0rem;
+  border: 1px solid var(--color-border-page);
+  box-shadow: 2px 1rem 7.6rem 3.1rem var(--color-boxshadow-button);
+  box-sizing: border-box;
+  margin-left:7.0rem;
+}
+
+  
+#display .timer{
+  display: flex;
+ justify-content: center;
+}
+#display .timer h1{
+  font-size: 12.0rem;
+  color: var(--color-timer-display);
+}
+
+
+
+
+
+/*======================CONTROLS-DISPLAY====================*/
+#controls {
+  display: flex;
+  flex-direction: row; 
+  gap: 2.5rem;
+  align-items: center;
+  box-sizing: border-box;
+}
+  
+#controls .hide{
+  display: none;
+}
+
+#controls button{
+  border: none;
+  background: none;
+  display: flex;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+#controls svg path{
+  fill: var(--color-timer-display);
+} 
+  
+
+
+
+/*======================CARD-SONDS====================*/
+#card-sonds{
+ width: 30.8rem;
+ height: 33.6rem;
+ padding: 2.0rem;
+ display: grid;
+ gap: 1.0rem;
+ grid-template-columns:  2fr 2fr;
+ box-sizing: border-box;
+}
+
+#card-sonds .sond-card{
+ background: var(--color-background-cards);
+}
+
+
+#card-sonds button{
+border: none;
+width: 10.0rem;
+height: 11rem;
+border-radius: 2.0rem;
+padding: 1.0rem;
+transition: 0.2s;
+}
+
+
+#card-sonds button:hover{
+background: rgba(87, 90, 241, 0.432);
+cursor: pointer;
+box-shadow: 5px 10px 26px 11px var(--color-boxshadow-button);
+
+}
+
+#card-sonds .svg-fill path{
+fill: var(--color-timer-display);
+}
+
+#card-sonds .sond-one .svg-fill path:hover{
+fill: var(--color-timer-display);
+}
+
+.sond-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/*==========Barra de v;  olume;=====*/
+
+.volumeslider{
+width: 62%;
+margin-top: 10px;
+cursor: pointer;
+
+}
+
+[type="range"]{
+  appearance: none;
+  border-radius: 10px;
+  background-color: var(--color-slide-ranger-background);
+  display: block;
+  padding: 3px;
+  transform: scale(1.5);
+  outline: none;
+}
+[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  display: block;
+  width: 5px;
+  height: 6px;
+  background-color:  var(--color-slide-ranger);
+  border-radius: 50%;
+}
+
+.sond-muter-button {
+  position: absolute;
+  left: 2.1rem;
+  top: 1.4rem;
+}
+
+.sound-on svg path{
+  fill: #050505;
+}
+
+.sound-off, .sound-on{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.sound-off  svg path{
+  fill: var(--color-svg-fill-button-muter);
+}
+.sound-on svg path {
+  fill: var(--color-svg-fill-button-muter);
+}
+
+/*=====BUTTON-SOND-ON-OFF===========*/
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+  
+   
+
+
+ 
+
+ 
+
+  
+
+  
+
+  
+ 
+ 
+ 
+
+  
+  
+  
+
+  
+
+
+
+
+
+  
+  
+  
+
+
+
+  
+   
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+
+
+  
+
+  
