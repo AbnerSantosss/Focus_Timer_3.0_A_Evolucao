@@ -17,3 +17,5 @@
 
 
 >  Preview ⬇️⬇️
+![— inclua um crédto (1)](https://user-images.githubusercontent.com/107922389/183080333-8e6ef631-1eb2-42ce-94a2-ee0810de8844.gif)
+
